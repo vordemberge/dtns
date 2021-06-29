@@ -237,7 +237,7 @@ a {
     padding: 2px 16px; }
 
   .dtns-subtitle {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 45px;
     letter-spacing: 1px; }
 
@@ -787,33 +787,33 @@ p {
 
   .dtns-bg-circle-filled {
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     background-color: #ff6200;
     opacity: .85;
     border-radius: 100%;
-    top: 40vh;
+    top: 30vh;
     left: -30vw;
-    -webkit-filter: blur(20px);
-    filter: blur(20px); }
+    -webkit-filter: blur(25px);
+    filter: blur(25px); }
 
   .dtns-bg-circle-outline {
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     background-color: transparent;
-    border: 2px #fff solid;
+    border: 3px #fff solid;
     opacity: .8;
     border-radius: 100%;
-    top: 40vh;
+    top: 30vh;
     left: -30vw;
     -webkit-transform: scale3d(0.7, 0.7, 0.7);
             transform: scale3d(0.7, 0.7, 0.7); }
 
   .dtns-bg-triangle-filled {
     position: absolute;
-    -webkit-transform: rotate(-12.5deg) scale3d(1.6, 1.6, 1.6);
-            transform: rotate(-12.5deg) scale3d(1.6, 1.6, 1.6);
+    -webkit-transform: rotate(-12.5deg) scale3d(1.8, 1.8, 1.8);
+            transform: rotate(-12.5deg) scale3d(1.8, 1.8, 1.8);
     top: 0vh;
     right: -15vw;
     -webkit-filter: blur(12px);
@@ -821,16 +821,16 @@ p {
 
   .dtns-bg-triangle-outline {
     position: absolute;
-    -webkit-transform: rotate(-12.5deg) scale3d(1.2, 1.2, 1.2);
-            transform: rotate(-12.5deg) scale3d(1.2, 1.2, 1.2);
+    -webkit-transform: rotate(-12.5deg) scale3d(1.4, 1.4, 1.4);
+            transform: rotate(-12.5deg) scale3d(1.4, 1.4, 1.4);
     top: 0vh;
     right: -15vw;
     opacity: .8; }
 
   .dtns-bg-triangle-support {
     opacity: .6;
-    -webkit-transform: scale3d(1.6, 1.6, 1.6) rotate(-12.5deg);
-            transform: scale3d(1.6, 1.6, 1.6) rotate(-12.5deg);
+    -webkit-transform: scale3d(1.8, 1.8, 1.8) rotate(-12.5deg);
+            transform: scale3d(1.8, 1.8, 1.8) rotate(-12.5deg);
     -webkit-filter: saturate(1.5) blur(12px);
     filter: saturate(1.5) blur(12px); }
 
@@ -880,9 +880,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40px; }
+  height: 40px;
+  width: 120px; }
   .header-logo:hover {
     cursor: pointer; }
+  .header-logo svg {
+    width: inherit; }
 
 .header-navigation {
   display: -webkit-box;
@@ -990,9 +993,6 @@ p {
   .header-logo {
     height: 40px; } }
 @media screen and (max-width: 568px) {
-  .header-logo {
-    height: 30px; }
-
   .header-navigation .header-date {
     display: none; } }
 /* MODULE - FOOTER */
