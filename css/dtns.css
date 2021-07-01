@@ -12,6 +12,8 @@
   --color-orange: #ff6200;
   --color-sky: #559bd1;
   --color-fuchsia: #ab0066;
+  --color-teal: #008080;
+  --color-leaf: #349651;
   --font-size-base: 16px;
   --font-weight-reg: 400;
   --font-weight-bold: 700;
@@ -366,7 +368,7 @@ p {
   position: absolute;
   height: 650px;
   width: 650px;
-  background-color: var(--color-fuchsia);
+  background-color: var(--color-leaf);
   -webkit-transform: rotate(12.5deg);
           transform: rotate(12.5deg);
   border-radius: 10%;
@@ -377,9 +379,9 @@ p {
   filter: blur(60px); }
 
 .dtns-bg-square-support {
-  opacity: .7;
-  -webkit-transform: scale3d(0.9, 0.9, 1) rotate(12.5deg);
-          transform: scale3d(0.9, 0.9, 1) rotate(12.5deg);
+  opacity: 1;
+  -webkit-transform: scale3d(0.8, 0.8, 1) rotate(12.5deg);
+          transform: scale3d(0.8, 0.8, 1) rotate(12.5deg);
   -webkit-filter: saturate(1.5) blur(60px);
   filter: saturate(1.5) blur(60px); }
 
