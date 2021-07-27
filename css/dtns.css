@@ -70,6 +70,17 @@ a {
   margin-bottom: 50px;
   text-align: center; }
 
+.dtns-subsection {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: var(--font-weight-black);
+  letter-spacing: 10px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 32px;
+  text-align: center; }
+
 .dtns-text {
   font-size: 20px;
   font-weight: var(--font-weight-bold);
@@ -78,7 +89,10 @@ a {
   text-align: center;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.8); }
 
-.dtns-text + .dtns-subtitle {
+.dtns-text + .dtns-subsection {
+  margin-top: 100px; }
+
+.dtns-text + .dtns-button {
   margin-top: 100px; }
 
 .dtns-date {
@@ -103,7 +117,8 @@ a {
   text-decoration: none;
   color: var(--color-dark);
   -webkit-box-shadow: 4px 4px rgba(0, 0, 0, 0.8);
-          box-shadow: 4px 4px rgba(0, 0, 0, 0.8); }
+          box-shadow: 4px 4px rgba(0, 0, 0, 0.8);
+  margin: 0 auto; }
 
 .button--register > span {
   display: inline-block; }
@@ -244,11 +259,20 @@ a {
   .dtns-subtitle {
     font-size: 35px;
     line-height: 45px;
-    letter-spacing: 1px; 
-  margin-bottom: 25px;}
-  
-  .dtns-text + .dtns-subtitle {
-  margin-top: 50px; }
+    letter-spacing: 1px;
+    margin-bottom: 50px; }
+
+  .dtns-text + .dtns-subsection {
+    margin-top: 50px; }
+
+  .dtns-text + .dtns-button {
+    margin-top: 50px; }
+
+  .dtns-subsection {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 30px; }
 
   .dtns-text {
     font-size: 16px;
@@ -292,7 +316,14 @@ a {
   margin-bottom: 200px; }
 
 .dtns-content {
-  max-width: 1000px; }
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .dtns-content + .dtns-content {
     margin-top: 40px; }
 
@@ -711,6 +742,9 @@ p {
     -ms-flex-negative: 0;
         flex-shrink: 0; } }
 @media screen and (max-width: 568px) {
+  p + .iframe-responsive {
+    margin-top: 50px; }
+
   .module-row .wrap-outside {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -883,7 +917,10 @@ p {
     margin-bottom: 120px;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; } }
+            align-items: flex-start; }
+
+  .footer {
+    margin-top: 50px; } }
 /* MODULE - HEADER */
 .header-logo {
   display: -webkit-box;
