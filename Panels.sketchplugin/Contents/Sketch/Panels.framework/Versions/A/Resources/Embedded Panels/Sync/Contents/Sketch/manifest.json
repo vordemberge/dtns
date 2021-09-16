@@ -1,0 +1,43 @@
+{
+  "name": "Sync",
+  "title": "Sync",
+  "version": "2.3.172",
+  "minPanelsVersion": "1.0.34",
+  "apiFile": "api.js",
+  "identifier": "com.invisionlabs.sync",
+  "order": 1,
+  "width": 275,
+  "height": 275,
+  "disableHeader": true,
+  "controllerClass": "ICSyncPanelViewController",
+  "disableCocoaScriptPreprocessor": true,
+  "onboarding": {
+    "width": 225,
+    "height": 250,
+    "videoUrl": "https://player.vimeo.com/video/189042765"
+  },
+  "settings": true,
+  "commands": [
+    {
+      "name": "Sync All Artboards",
+      "identifier": "sync-all-artboards",
+      "shortcut": "ctrl shift a",
+      "script": "commands.js",
+      "handler": "sync"
+    },
+    {
+      "name": "Sync Selected Artboards",
+      "identifier": "sync-selected-artboards",
+      "shortcut": "ctrl shift s",
+      "script": "commands.js",
+      "handler": "sync"
+    }
+  ],
+  "menu": {
+    "items": [
+      "sync-all-artboards",
+      "sync-selected-artboards"
+    ]
+  },
+  "actions": []
+}
